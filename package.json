@@ -4,12 +4,21 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "nodemon -e js,html ./node_modules/mocha/bin/mocha"
+    "test": "nodemon -e js,html ./node_modules/mocha/bin/mocha",
+    "start:dev": "PORT=3000 nodemon server.js"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "chai": "^3.5.0",
-    "mocha": "^3.0.1"
+    "mocha": "^3.0.1",
+    "supertest": "^2.0.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "bootstrap": "^3.3.7",
+    "express": "^4.14.0",
+    "method-override": "^2.3.6",
+    "swig": "^1.4.2"
   }
 }
